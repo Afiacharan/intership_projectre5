@@ -1,0 +1,102 @@
+   body {
+    background-color: #f0f0f0; /* Fallback color if the image is not available or while it loads */
+    background-image: url('back.jpeg'); /* URL of your background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Cover the entire area of the body */
+    background-position: center; /* Center the background image */
+    height: 88vh; /* Set the body height to full viewport height */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Optional: Set a default font family */
+  }
+  
+  .container {
+    margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
+  .chill {
+    background-color: #ffffff;
+    padding: 25px;
+  }
+  
+  .dill {
+    background-color: #343a40a4;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .text-primary {
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: rgb(14, 115, 115);
+    border-color: rgb(14, 115, 115);
+    width: 150px;
+  }
+  
+  .btn-outline-primary {
+    color: rgba(4, 4, 63, 0.858);
+  }
+  
+  .btn-outline-primary:hover {
+    color: #b14e4e;
+  }
+  
+  .fa-user-plus, .fa-square-check, .fa-t, .fa-clock, .fa-magnifying-glass, .fa-file, .fa-earth-americas {
+    font-size: 24px;
+  }
+  
+  .dill .d-flex span {
+    font-size: 18px;
+  }
+  
+  @media (max-width: 991px) {
+    .chill, .dill {
+      margin-bottom: 20px;
+    }
+  }
+.fom {
+    width: 610px; /* Ensure form takes full width */
+    /* max-width: 600px; Set a maximum width for better readability */
+    margin: 0 auto;
+    font-size: 20px; /* Reduce font size for better responsiveness */
+    position: relative;
+    /* padding: 20px; Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Style for the position class */
+  .position {
+    position: absolute;
+    color: #343a40ad;
+    left: 95%; /* Position from the center */
+    transform: translateX(-50%); /* Center horizontally */
+    top: 10px; /* Adjust top position */
+    
+  }
+  
+  /* Style for the all class */
+  .all {
+    position: absolute;
+    top: 70px; /* Adjust top position */
+    left: 95%; /* Position from the center */
+    transform: translateX(-50%); /* Center horizontally */
+    color: #343a40ad;
+  }
+  
+  /* Media query for responsive adjustments */
+  @media (max-width: 768px) {
+    .fom {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    
+    .position, .all {
+      position: static; /* Reset position to default */
+      transform: none; /* Reset transform */
+      text-align: center; /* Center text */
+      margin-left: 400px; /* Adjust margin for spacing */
+      /* margin-top: 300px; */
+    }
+  }
+  
